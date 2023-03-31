@@ -19,7 +19,7 @@
 #include "afxdialogex.h"
 #include "Lab03_SimpleApp.h"
 #include "MainFrm.h"
-#include <locale.h>		// setlocale을 위한 헤더 선언
+//#include <locale.h>		// setlocale을 위한 헤더 선언
 #ifdef _DEBUG
 #define new DEBUG_NEW
 #endif
@@ -83,12 +83,12 @@ BOOL Lab03SimpleApp::InitInstance()
 		WS_OVERLAPPEDWINDOW | FWS_ADDTOTITLE, nullptr,
 		nullptr);
 
-	_tsetlocale(LC_ALL, _T(" "));		// for korean
-	char test[1024];		// 입력 버퍼 선언
+	//_tsetlocale(LC_ALL, _T(" "));		// for korean
+	char test[100];		// 입력 버퍼 선언
 	FILE* testFile;			// 파일 포인터 선언
 	testFile = fopen("test.txt", "r");	// file open
-	fgets(test, 1024, testFile);		// read line
-	theApp.str = test;				// theApp str 변수에 text입력
+	fgets(test, 100, testFile);		// read line
+  	theApp.str = test;				// theApp str 변수에 text입력
 
 
 

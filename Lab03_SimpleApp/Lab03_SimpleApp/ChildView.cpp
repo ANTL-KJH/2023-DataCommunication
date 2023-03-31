@@ -47,6 +47,8 @@ BOOL CChildView::PreCreateWindow(CREATESTRUCT& cs)
 void CChildView::OnPaint() 
 {
 	CPaintDC dc(this); // 그리기를 위한 디바이스 컨텍스트입니다.
+
+
 	dc.TextOut(100, 100, theApp.str);	//(x, y, 출력 문자열)
 	// TODO: 여기에 메시지 처리기 코드를 추가합니다.
 	

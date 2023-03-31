@@ -18,13 +18,13 @@ class Lab03SimpleApp : public CWinApp
 {
 public:
 	Lab03SimpleApp() noexcept;
-
+	CString str;				// 데이터 전달을 위한 변수 선언
 
 // 재정의입니다.
 public:
 	virtual BOOL InitInstance();
 	virtual int ExitInstance();
-	CString str;				// 데이터 전달을 위한 변수 선언
+
 // 구현입니다.
 
 public:
