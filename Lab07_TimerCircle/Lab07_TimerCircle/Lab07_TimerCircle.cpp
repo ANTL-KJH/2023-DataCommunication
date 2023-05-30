@@ -41,7 +41,11 @@ CLab07TimerCircleApp::CLab07TimerCircleApp() noexcept
 
 CLab07TimerCircleApp theApp;
 
-
+UINT CPUBusy(LPVOID arg)		// Busy wait
+{
+	while (1);
+	return 0;
+}
 // CLab07TimerCircleApp 초기화
 
 BOOL CLab07TimerCircleApp::InitInstance()
@@ -92,6 +96,17 @@ BOOL CLab07TimerCircleApp::InitInstance()
 	// 창 하나만 초기화되었으므로 이를 표시하고 업데이트합니다.
 	pFrame->ShowWindow(SW_SHOW);
 	pFrame->UpdateWindow();
+
+
+	// CPU 개수를 알아낸다.
+	SYSTEM_INFO si;
+	GetSystemInfo(&si);
+	// (CPU 개수 - 1)개의 스레드를 만든다.
+	for (int i = 0; i < (int)si.dwNumberOfProcessors - 1; i++)
+	{
+		AfxBeginThread(CPUBusy, NULL, THREAD_PRIORITY_HIGHEST, 0, 0, NULL);
+	}
+
 	return TRUE;
 }
 

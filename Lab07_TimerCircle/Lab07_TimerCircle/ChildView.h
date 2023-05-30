@@ -7,6 +7,10 @@
 
 
 // CChildView 창
+struct ThreadArg
+{
+	CWnd* pWnd;		// window object addr
+};
 
 class CChildView : public CWnd
 {
@@ -16,7 +20,8 @@ public:
 
 // 특성입니다.
 public:
-
+	CWinThread* pThread;//스레드 객체 주소
+	ThreadArg arg;
 // 작업입니다.
 public:
 
@@ -32,5 +37,6 @@ public:
 protected:
 	afx_msg void OnPaint();
 	DECLARE_MESSAGE_MAP()
+public:
+	afx_msg void OnLButtonDown(UINT nFlags, CPoint point);
 };
-

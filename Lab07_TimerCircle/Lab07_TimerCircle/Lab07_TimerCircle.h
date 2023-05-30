@@ -18,6 +18,8 @@ class CLab07TimerCircleApp : public CWinAppEx
 {
 public:
 	CLab07TimerCircleApp() noexcept;
+	CList <CPoint, CPoint&> cir_lst;	// circle list
+
 
 
 // 재정의입니다.
