@@ -1,0 +1,8 @@
+﻿  ARQUDPServer.cpp
+  ARQUDPServerDlg.cpp
+  CDataSocket.cpp
+  코드를 생성하고 있습니다...
+ARQUDPServer.obj : warning LNK4258: '/entry:WinMainCRTStartup' 지시문은 '/ENTRY:wWinMainCRTStartup' 스위치와 호환되지 않습니다. 무시됩니다.
+ARQUDPServerDlg.obj : warning LNK4258: '/entry:WinMainCRTStartup' 지시문은 '/ENTRY:wWinMainCRTStartup' 스위치와 호환되지 않습니다. 무시됩니다.
+CDataSocket.obj : warning LNK4258: '/entry:WinMainCRTStartup' 지시문은 '/ENTRY:wWinMainCRTStartup' 스위치와 호환되지 않습니다. 무시됩니다.
+  ARQUDPServer.vcxproj -> C:\Users\ANTL\Desktop\GitHub\2023-DataCommunication\Lab11_ARQUDPServer\ARQUDPServer\x64\Debug\ARQUDPServer.exe

@@ -1,2 +1,6 @@
-﻿  UDPClient_thdDlg.cpp
-  UDPClient_thd.vcxproj -> C:\Users\ANTL\Desktop\GitHub\2023-DataCommunication\Lab09_UDPClient_thd\UDPClient_thd\x64\Debug\UDPClient_thd.exe
+﻿  pch.cpp
+  CDataSocket.cpp
+  UDPClient_thd.cpp
+  UDPClient_thdDlg.cpp
+  코드를 생성하고 있습니다...
+  UDPClient_thd.vcxproj -> C:\Users\ANTL\Desktop\GitHub\2023-DataCommunication\Lab10_UDPClient_thd\UDPClient_thd\x64\Debug\UDPClient_thd.exe
